@@ -87,7 +87,8 @@ Promise.all(urls.map(url =>
             
     return (
     
-        <><div id="debug">{selectedMap}</div>
+        <>
+        {/*<div id="debug">{selectedMap}</div>*/}
         <Dialog         open={open}
           onClose={this.handleClose}>
             <DialogTitle id="simple-dialog-title">Velg kartlag</DialogTitle>
