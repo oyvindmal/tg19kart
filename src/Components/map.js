@@ -57,7 +57,7 @@ class Map extends Component {
      }
     componentDidMount() {
   
-let urls = ['/maps/map1.json', '/maps/map2.json', '/maps/map3.json'];
+let urls = ['/maps/map1.json'];
 let arr = [];
 fetch('/maps/maps.json').then(response => response.json()).then(
     results => {

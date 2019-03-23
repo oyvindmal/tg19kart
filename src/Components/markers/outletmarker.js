@@ -11,7 +11,7 @@ class OutletMarker extends Component {
   render() {
       let vClass = "marker p" + this.props.v
     return (
-        <span class={vClass} style={{"position" : "absolute", "left" : this.props.x, "top" : this.props.y}}>{this.props.a}</span>
+        <span title="lol" class={vClass} style={{"position" : "absolute", "left" : this.props.x, "top" : this.props.y}}>{this.props.a}</span>
     );
   }
 }
