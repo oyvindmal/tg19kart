@@ -1,4 +1,5 @@
 [
-    {"DisplayName" : "Uttak fra Niklas", "Filename": "outlet"}
+    {"DisplayName" : "Uttak fra Niklas", "Filename": "outlet"},
+    {"DisplayName" : "Bestillinger", "Filename": "order"}
 
 ]
