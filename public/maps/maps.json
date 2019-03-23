@@ -1,5 +1,5 @@
 [
     {"DisplayName" : "Uttak (ikke sjekket)", "Filename": "outlet"},
-    {"DisplayName" : "Bestillinger (Jira)", "Filename": "order"}
+    {"DisplayName" : "Bestillinger (Innmeldt i Jira)", "Filename": "order"}
 
 ]
