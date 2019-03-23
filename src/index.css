@@ -6,9 +6,66 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #231F20;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#map {
+  position:absolute;
+  left:0;
+  right:0;
+  width: 1920px;
+  height: 1038px;
+  background:url(/tg19-2.png)
+}
+.marker {
+  width:30px;
+  height:30px;
+  text-align:center;
+  font-weight:bold;
+  border:3px #000 dashed;
+}
+.p230 {
+  background: #1c52a8;
+  color: #fff;
+}
+
+.p400 {
+  background: #b21515;
+  color: #fff;
+}
+
+.displayClick {
+  position: absolute;
+  z-index: 1000;
+  color: #fff;
+  font-weight:bold;
+  background: #EE255C;
+  padding:10px;
+  top:0;
+  right:0;
+}
+
+
+#debug {
+  position: absolute;
+  z-index: 1000;
+  color: #fff;
+  font-weight:bold;
+  background: #EE255C;
+  padding:10px;
+  top:200px;
+  right:0;
+
+}
+
+#mapLayerButton{
+  position: absolute;
+  z-index: 1000;
+  top:0;
+  left:0;
 }
