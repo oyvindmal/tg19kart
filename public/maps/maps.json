@@ -1,4 +1,5 @@
 [
-    {"DisplayName" : "Uttak (ikke verifisert)", "Filename": "outlet"}
+    {"DisplayName" : "Uttak (ikke verifisert)", "Filename": "outlet"},
+    {"DisplayName" : "Sponsorer", "Filename": "stand"}
 
 ]
