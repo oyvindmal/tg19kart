@@ -1,10 +1,12 @@
 [
     {
-        "x": 397, 
+        "x": 397,
+        "description" : "Bak ledskjerm",
         "y": 774,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     },
 
     {
@@ -12,14 +14,16 @@
         "y": 880,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     },
     {
         "x": 895, 
         "y": 880,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     }
     ,
     {
@@ -27,42 +31,48 @@
         "y": 797,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     },
     {
         "x": 1497, 
         "y": 797,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     },
     {
         "x": 1537, 
         "y": 797,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     },
     {
         "x": 1577, 
         "y": 797,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     },
     {
         "x": 1617, 
         "y": 797,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     },
     {
         "x": 1457, 
         "y": 835,
         "type": "outlet",  
         "v" : 400,
-        "a" : 125
+        "a" : 125,
+        "marker" : "outlet"
     }
     ,
     {
@@ -70,7 +80,8 @@
         "y": 835,
         "type": "outlet",  
         "v" : 400,
-        "a" : 125
+        "a" : 125,
+        "marker" : "outlet"
     }
     ,
     {
@@ -78,7 +89,8 @@
         "y": 424,
         "type": "outlet",  
         "v" : 400,
-        "a" : 32
+        "a" : 32,
+        "marker" : "outlet"
     }
     ,
     {
@@ -86,7 +98,8 @@
         "y": 81,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     }
     ,
     {
@@ -94,7 +107,8 @@
         "y": 81,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     }
 
     ,
@@ -103,7 +117,8 @@
         "y": 391,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     }
     ,
     {
@@ -111,7 +126,8 @@
         "y": 532,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     }
     ,
     {
@@ -119,28 +135,32 @@
         "y": 211,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     },
     {
         "x": 915, 
         "y": 211,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     },
     {
         "x": 1170, 
         "y": 211,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     },
     {
         "x": 1337, 
         "y": 188,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     }
     ,
     {
@@ -148,7 +168,8 @@
         "y": 595,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     }
     ,
     {
@@ -156,7 +177,8 @@
         "y": 595,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     }
     ,
     {
@@ -164,7 +186,8 @@
         "y": 327,
         "type": "outlet",  
         "v" : 400,
-        "a" : "X"
+        "a" : "X",
+        "marker" : "outlet"
     }
     ,
     {
@@ -172,7 +195,8 @@
         "y": 573,
         "type": "outlet",  
         "v" : 400,
-        "a" : 63
+        "a" : 63,
+        "marker" : "outlet"
     }
     ,
     {
@@ -180,7 +204,8 @@
         "y": 573,
         "type": "outlet",  
         "v" : 400,
-        "a" : 32
+        "a" : 32,
+        "marker" : "outlet"
     }
     
     
