@@ -138,7 +138,7 @@ Promise.all(urls.map(url =>
           
           <Hallkart />
           {this.filterItems(markers, selectedMap).map(item => (
-                <CanvasMarker x={item.x} y={item.y} a={item.a} v={item.v}/>
+                <CanvasMarker x={item.x} y={item.y} a={item.a} v={item.v} object={item}/>
             ))}
       
         </Layer>
