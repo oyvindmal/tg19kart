@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import OutletMarker from './markers/outletmarker'
 import CanvasMarker from './markers/CanvasMarker'
+import StandMarker from './markers/StandMarker'
 import Button from '@material-ui/core/Button'
 import Icon from '@material-ui/core/Icon';
 import Dialog from '@material-ui/core/Dialog';
@@ -28,10 +29,18 @@ class CanvasMap extends Component {
             y:0,
             open: false,
             maps: null,
-            selectedMap: 'outlet'
+            selectedMap: 'stand',
+            clickedMarker: null
           };
     }
-
+    renderMarker(item)
+    {
+        switch(item.Marker)
+        {
+            case "stand" : return <StandMarker x={item.x} y={item.y} w={item.width} description={item.description} object={item}/>;
+            default: return <CanvasMarker x={item.x} y={item.y} a={item.a} v={item.v} object={item}/>;
+        }
+    }
     handleClick = (e)  => {
  
 
@@ -69,7 +78,9 @@ class CanvasMap extends Component {
          })
         }
      }
-
+     handleIt = (object) => {
+         this.setState(object);
+     }
      getDisplayName = (filename) => {
             let outvar = "NA"
              this.state.maps.forEach((value) => {
@@ -83,7 +94,7 @@ class CanvasMap extends Component {
      }
     componentDidMount() {
   
-let urls = ['/maps/map1.json'];
+let urls = ['/maps/map1.json', '/maps/sponsorer.json'];
 let arr = [];
 fetch('/maps/maps.json').then(response => response.json()).then(
     results => {
@@ -107,14 +118,14 @@ Promise.all(urls.map(url =>
 
     }
   render() {
-    const { error, isLoaded, x,y, markers, open, maps, selectedMap} = this.state;
+    const { error, isLoaded, x,y, markers, open, maps, selectedMap, clickedMarker} = this.state;
     
       if (error) {
           return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
           return <div>Loading...</div>;
         } else {
-            
+        //console.log(clickedMarker)
     return (
        <>
        <div id="debug">Aktivt kartlag:<br/>{this.getDisplayName(selectedMap)}</div>
@@ -138,7 +149,7 @@ Promise.all(urls.map(url =>
           
           <Hallkart />
           {this.filterItems(markers, selectedMap).map(item => (
-                <CanvasMarker x={item.x} y={item.y} a={item.a} v={item.v} object={item}/>
+                this.renderMarker(item)
             ))}
       
         </Layer>
