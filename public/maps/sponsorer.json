@@ -1,0 +1,119 @@
+[
+    {
+        "x": 560,
+        "description" : "OsloMet",
+        "y": 742,
+        "type": "stand",  
+        "Marker" : "stand",
+        "width": "70"
+        
+    },
+    {
+        "x": 630,
+        "description" : "UIO",
+        "y": 742,
+        "type": "stand",  
+        "Marker" : "stand",
+        "width": "70"
+        
+    },
+    {
+        "x": 700,
+        "description" : "NSM",
+        "y": 742,
+        "type": "stand",  
+        "Marker" : "stand",
+        "width": "42"
+        
+    },
+    {
+        "x": 742,
+        "description" : "ZooComics",
+        "y": 742,
+        "type": "stand",  
+        "Marker" : "stand",
+        "width": "56"
+        
+    },
+    {
+        "x": 798,
+        "description" : "TBA",
+        "y": 742,
+        "type": "stand",  
+        "Marker" : "stand",
+        "width": "42"
+        
+    },
+    {
+        "x": 840,
+        "description" : "TBA",
+        "y": 742,
+        "type": "stand",  
+        "Marker" : "stand",
+        "width": "42"
+        
+    },
+    {
+        "x": 882,
+        "description" : "TBA",
+        "y": 742,
+        "type": "stand",  
+        "Marker" : "stand",
+        "width": "42"
+        
+    },
+    {
+        "x": 924,
+        "description" : "Tech",
+        "y": 742,
+        "type": "stand",  
+        "Marker" : "stand",
+        "width": "28"
+        
+    },
+    {
+        "x": 952,
+        "description" : "Nextron",
+        "y": 742,
+        "type": "stand",  
+        "Marker" : "stand",
+        "width": "56"
+        
+    } ,
+    {
+        "x": 1008,
+        "description" : "POPUP",
+        "y": 742,
+        "type": "stand",  
+        "Marker" : "stand",
+        "width": "28"
+        
+    } ,
+    {
+        "x": 1036,
+        "description" : "HIOF",
+        "y": 742,
+        "type": "stand",  
+        "Marker" : "stand",
+        "width": "70"
+        
+    },
+    {
+        "x": 1106,
+        "description" : "Noroff",
+        "y": 742,
+        "type": "stand",  
+        "Marker" : "stand",
+        "width": "70"
+        
+    }  ,
+    {
+        "x": 1176,
+        "description" : "Partyshop",
+        "y": 742,
+        "type": "stand",  
+        "Marker" : "stand",
+        "width": "56"
+        
+    }
+]
