@@ -29,7 +29,7 @@ class CanvasMap extends Component {
             y:0,
             open: false,
             maps: null,
-            selectedMap: 'stand',
+            selectedMap: 'outlet',
             clickedMarker: null
           };
     }
