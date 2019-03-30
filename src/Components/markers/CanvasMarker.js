@@ -23,11 +23,11 @@ class CanvasMarker extends Component {
     }
 
     detailsClick = (object) => {
-        console.log(object);
+        //console.log(object);
         this.setState({clickedMarker : object})
     }
   render() {
-    console.log(this.state);
+    //console.log(this.state);
     return (
        
         <Group>

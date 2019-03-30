@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import OutletMarker from './markers/outletmarker'
+
 import CanvasMarker from './markers/CanvasMarker'
 import StandMarker from './markers/StandMarker'
 import Button from '@material-ui/core/Button'
@@ -125,7 +125,7 @@ Promise.all(urls.map(url =>
         } else if (!isLoaded) {
           return <div>Loading...</div>;
         } else {
-        //console.log(clickedMarker)
+
     return (
        <>
        <div id="debug">Aktivt kartlag:<br/>{this.getDisplayName(selectedMap)}</div>
