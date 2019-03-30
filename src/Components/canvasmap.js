@@ -7,7 +7,7 @@ import Icon from '@material-ui/core/Icon';
 import Dialog from '@material-ui/core/Dialog';
 import { Paper, Typography, DialogTitle, List, ListItem, ListItemText } from '@material-ui/core';
 
-import { Stage, Layer, Rect, Text, Image } from 'react-konva';
+import { Stage, Layer, Circle, Text, Image } from 'react-konva';
 import Konva from 'konva';
 import useImage from 'use-image';
 const Hallkart = () => {
@@ -153,6 +153,9 @@ Promise.all(urls.map(url =>
             ))}
       
         </Layer>
+        <Layer>
+        <Circle x={this.state.x} y={this.state.y} radius={10} stroke="black" strokeWidth={2} fill="green" />
+            </Layer>
     
       </Stage>
        </>
