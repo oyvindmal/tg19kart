@@ -144,7 +144,7 @@ Promise.all(urls.map(url =>
         </Dialog>
         <div class="displayClick">{x},{y}</div>
         <Button variant="fab" color="default" id="mapLayerButton" onClick={this.handleOpen}><Icon>map</Icon></Button>
-        <Stage width={1920} height={1080} onClick={this.handleClick} preventDefault={false}>
+        <Stage width={1920} height={1080} onClick={this.handleClick} preventDefault="false">
         <Layer>
           
           <Hallkart />
