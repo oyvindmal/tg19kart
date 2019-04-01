@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 
 import CanvasMarker from './markers/CanvasMarker'
 import StandMarker from './markers/StandMarker'
+import AreaMarker from './markers/AreaMarker'
+import TextLabel from './markers/TextLabel'
 import Button from '@material-ui/core/Button'
 import Icon from '@material-ui/core/Icon';
 import Dialog from '@material-ui/core/Dialog';
-import { Paper, Typography, DialogTitle, List, ListItem, ListItemText } from '@material-ui/core';
+import { Paper, Typography, DialogTitle, List, ListItem, ListItemText, AppBar, Toolbar } from '@material-ui/core';
 
 import { Stage, Layer, Circle, Text, Image } from 'react-konva';
 import Konva from 'konva';
@@ -128,7 +130,16 @@ Promise.all(urls.map(url =>
 
     return (
        <>
-       <div id="debug">Aktivt kartlag:<br/>{this.getDisplayName(selectedMap)}</div>
+            <AppBar position="absolute" color="inherit">
+                <Toolbar>
+                    <Typography variant="h6">TG19 kart</Typography>
+                    <Button  color="default"  onClick={this.handleOpen}><Icon>map</Icon> Velg kartlag</Button>
+                    <Typography variant="button">Aktivt kartlag:</Typography>
+                    <Typography variant="overline">{this.getDisplayName(selectedMap)}</Typography>
+                    <Typography variant="button">Markert punkt:</Typography>
+                    <Typography variant="overline">{x},{y}</Typography>
+                </Toolbar>
+            </AppBar>
                <Dialog         open={open}
           onClose={this.handleClose}>
             <DialogTitle id="simple-dialog-title">Velg kartlag</DialogTitle>
@@ -142,20 +153,44 @@ Promise.all(urls.map(url =>
                 </List>
         </div>
         </Dialog>
-        <div class="displayClick">{x},{y}</div>
-        <Button variant="fab" color="default" id="mapLayerButton" onClick={this.handleOpen}><Icon>map</Icon></Button>
+   
         <Stage width={1920} height={1080} onClick={this.handleClick} preventDefault="false">
         <Layer>
           
           <Hallkart />
+
+          <AreaMarker x={460} y={320} w={250} h={180} description="Sektor 8" fill="#F68D1E" />
+          <AreaMarker x={740} y={320} w={200} h={180} description="Scene" fill="#0CA5C7" />
+          <AreaMarker x={970} y={320} w={200} h={180} description="Sektor 4" fill="#F68D1E" />
+          <AreaMarker x={1200} y={320} w={300} h={180} description="Sektor 2" fill="#F68D1E" />
+
+
+          <AreaMarker x={510} y={550} w={200} h={180} description="Sektor 7" fill="#EE255C" />   
+          <AreaMarker x={740} y={550} w={200} h={70} description="Sektor 5" fill="#EE255C" />        
+          <AreaMarker x={970} y={550} w={200} h={180} description="Sektor 3" fill="#EE255C" />   
+          <AreaMarker x={1200} y={550} w={220} h={180} description="Sektor 1" fill="#EE255C" />      
+
+
+           <AreaMarker x={740} y={630} w={200} h={100} description="Elkjøp shop" fill="#58595B" />
+
+            
+          <AreaMarker x={1430} y={550} w={130} h={45} description="Info" fill="#50B848" />      
+          <AreaMarker x={1430} y={595} w={130} h={45} description="Shop" fill="#7AC470" />    
+          <AreaMarker x={1430} y={650} w={130} h={70} description="Crew" fill="#58595B" />    
+
+          <AreaMarker x={755} y={113} w={130} h={45} description="TVbuss" fill="#58595B" />
+
+          <TextLabel x={120} y={500} w={150} h={45} description="Auditorium" />
+          <TextLabel x={583} y={950} w={150} h={45} description="Resepsjon" />
+          <TextLabel x={583} y={1000} w={190} h={45} description="Hovedinngang" />
+          <TextLabel x={1757} y={710} w={100} h={45} description="Sørport" />
+          <TextLabel x={145} y={691} w={120} h={45} description="Nordport" />
           {this.filterItems(markers, selectedMap).map(item => (
                 this.renderMarker(item)
             ))}
-      
+      <Circle x={this.state.x} y={this.state.y} radius={10} stroke="black" strokeWidth={2} fill="green" />
         </Layer>
-        <Layer>
-        <Circle x={this.state.x} y={this.state.y} radius={10} stroke="black" strokeWidth={2} fill="green" />
-            </Layer>
+   
     
       </Stage>
        </>
