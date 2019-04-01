@@ -11,7 +11,7 @@ import { Stage, Layer, Circle, Text, Image } from 'react-konva';
 import Konva from 'konva';
 import useImage from 'use-image';
 const Hallkart = () => {
-    const [image] = useImage('/tg19-2.png');
+    const [image] = useImage('/tg19cad.png');
     return <Image image={image} x={0} y={0}/>;
   };
 
@@ -29,7 +29,7 @@ class CanvasMap extends Component {
             y:0,
             open: false,
             maps: null,
-            selectedMap: 'outlet',
+            selectedMap: 'stand',
             clickedMarker: null
           };
     }
