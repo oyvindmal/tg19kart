@@ -17,6 +17,11 @@ const Hallkart = () => {
     return <Image image={image} x={0} y={0}/>;
   };
 
+  const Tglogo = () => {
+    const [image] = useImage('/tglogo.png');
+    return <Image image={image} x={1750} y={1000}/>;
+  };
+
 
   
   
@@ -34,7 +39,11 @@ class CanvasMap extends Component {
             selectedMap: 'stand',
             clickedMarker: null
           };
+
     }
+
+
+
     renderMarker(item)
     {
         switch(item.Marker)
@@ -132,12 +141,13 @@ Promise.all(urls.map(url =>
        <>
             <AppBar position="absolute" color="inherit">
                 <Toolbar>
-                    <Typography variant="h6">TG19 kart</Typography>
-                    <Button  color="default"  onClick={this.handleOpen}><Icon>map</Icon> Velg kartlag</Button>
-                    <Typography variant="button">Aktivt kartlag:</Typography>
-                    <Typography variant="overline">{this.getDisplayName(selectedMap)}</Typography>
-                    <Typography variant="button">Markert punkt:</Typography>
-                    <Typography variant="overline">{x},{y}</Typography>
+                    <Typography variant="h6">The Gathering 2019 - Arbeidskart</Typography>
+                    
+                    <Typography variant="button" style={{"padding-left": "10px"}}>Aktivt kartlag:</Typography>
+                    <Typography variant="overline" style={{"padding-left": "10px"}}>{this.getDisplayName(selectedMap)}</Typography>
+                    <Typography variant="button" style={{"padding-left": "10px"}}>Markert punkt:</Typography>
+                    <Typography variant="overline" style={{"padding-left": "10px", "flexGrow" : 1}}>{x},{y}</Typography>
+                    <Button variant="extendedFab" size="small" color="inherit"  onClick={this.handleOpen}><Icon>map</Icon> Velg kartlag</Button>
                 </Toolbar>
             </AppBar>
                <Dialog         open={open}
@@ -185,6 +195,8 @@ Promise.all(urls.map(url =>
           <TextLabel x={583} y={1000} w={190} h={45} description="Hovedinngang" />
           <TextLabel x={1757} y={710} w={100} h={45} description="Sørport" />
           <TextLabel x={145} y={691} w={120} h={45} description="Nordport" />
+
+          <Tglogo />
           {this.filterItems(markers, selectedMap).map(item => (
                 this.renderMarker(item)
             ))}
