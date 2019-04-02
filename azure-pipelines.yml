@@ -15,3 +15,7 @@ steps:
   inputs:
     workingDir: '$(System.DefaultWorkingDirectory)'
     verbose: false
+
+- script: 'npm run build'
+  workingDirectory: '$(System.DefaultWorkingDirectory)'
+  displayName: 'Run build'
