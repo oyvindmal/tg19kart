@@ -145,7 +145,7 @@ Promise.all(urls.map(url =>
                     
                     <Typography variant="button" style={{"padding-left": "10px"}}>Aktivt kartlag:</Typography>
                     <Typography variant="overline" style={{"padding-left": "10px"}}>{this.getDisplayName(selectedMap)}</Typography>
-                    <Typography variant="button" style={{"padding-left": "10px"}}>Markert punkt:</Typography>
+                    <Typography variant="button" style={{"padding-left": "10px"}}>Punkt:</Typography>
                     <Typography variant="overline" style={{"padding-left": "10px", "flexGrow" : 1}}>{x},{y}</Typography>
                     <Button variant="extendedFab" size="small" color="inherit"  onClick={this.handleOpen}><Icon>map</Icon> Velg kartlag</Button>
                 </Toolbar>
