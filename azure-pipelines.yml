@@ -13,5 +13,5 @@ steps:
 - task: Npm@1
   displayName: 'npm install'
   inputs:
-    workingDir: '$(System.DefaultWorkingDirectory)/_oyvindmal_tg19kart'
+    workingDir: '$(System.DefaultWorkingDirectory)'
     verbose: false
