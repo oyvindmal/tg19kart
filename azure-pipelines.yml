@@ -19,3 +19,8 @@ steps:
 - script: 'npm run build'
   workingDirectory: '$(System.DefaultWorkingDirectory)'
   displayName: 'Run build'
+
+- task: PublishPipelineArtifact@0
+  displayName: 'Publish Pipeline Artifact'
+  inputs:
+    targetPath: '$(System.DefaultWorkingDirectory)/build'
