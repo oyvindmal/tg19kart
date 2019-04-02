@@ -42,7 +42,7 @@ class CanvasMap extends Component {
 
     }
 
-
+    //test
 
     renderMarker(item)
     {
