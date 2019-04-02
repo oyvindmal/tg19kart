@@ -141,7 +141,7 @@ Promise.all(urls.map(url =>
        <>
             <AppBar position="absolute" color="inherit">
                 <Toolbar>
-                    <Typography variant="h6">The Gathering 2019 - Arbeidskart</Typography>
+                    <Typography variant="h6">The Gathering 2019 - Arbeidskart (Location:Site)</Typography>
                     
                     <Typography variant="button" style={{"padding-left": "10px"}}>Aktivt kartlag:</Typography>
                     <Typography variant="overline" style={{"padding-left": "10px"}}>{this.getDisplayName(selectedMap)}</Typography>
